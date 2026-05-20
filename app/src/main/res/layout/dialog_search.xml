@@ -60,7 +60,7 @@
             android:layout_weight="1"
             android:background="@null"
             android:hint="Şarkı adı veya sanatçı…"
-            android:hintTextColor="@color/text_hint"
+            android:textColorHint="@color/text_hint"
             android:textColor="@color/text_primary"
             android:textSize="15sp"
             android:imeOptions="actionSearch"
