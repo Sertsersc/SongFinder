@@ -83,7 +83,7 @@ class SongSearchTileService : TileService() {
         setTileListening()
 
         // Paneli kapat, arka planda dinle
-        collapseStatusBar()
+        // collapseStatusBar()
 
         // Dinleme bildirimi göster
         createChannels()
