@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MYT Müzik logosu temsili - müzik notu + play -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="28dp"
+    android:height="28dp"
+    android:viewportWidth="28"
+    android:viewportHeight="28">
+
+    <!-- Dış daire -->
+    <path
+        android:fillColor="#FF2D55"
+        android:pathData="M14,2 C7.37,2 2,7.37 2,14 C2,20.63 7.37,26 14,26 C20.63,26 26,20.63 26,14 C26,7.37 20.63,2 14,2Z"/>
+
+    <!-- Play üçgeni (beyaz) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M11,9 L20,14 L11,19 Z"/>
+
+</vector>

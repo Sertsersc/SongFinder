@@ -1,0 +1,18 @@
+# Bu dosyayı kopyala → local.properties olarak kaydet
+# ASLA git'e commit etme! (.gitignore'da zaten var)
+
+sdk.dir=/Users/KULLANICI_ADIN/Library/Android/sdk
+
+# ── Last.fm API Key ────────────────────────────────────────────────────────
+# Ücretsiz key: https://www.last.fm/api/account/create
+LASTFM_API_KEY=buraya_lastfm_api_key
+
+# ── ACRCloud Credentials ───────────────────────────────────────────────────
+# Ücretsiz hesap: https://console.acrcloud.com
+# 1. Sign Up → Console'a gir
+# 2. Projects → Create Project → "Audio & Video Recognition"
+# 3. Projeye tıkla → Credentials sekmesi
+# Buradan 3 değeri kopyala:
+ACR_HOST=identify-eu-west-1.acrcloud.com
+ACR_ACCESS_KEY=buraya_access_key
+ACR_SECRET_KEY=buraya_secret_key

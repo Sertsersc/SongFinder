@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog"
+    android:padding="20dp"
+    android:elevation="16dp">
+
+    <!-- Başlık -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_myt_logo"
+            android:contentDescription="MYT" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:text="MYT için Şarkı Ara"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary" />
+
+        <ImageButton
+            android:id="@+id/cancelBtn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_clear"
+            android:tint="@color/text_secondary"
+            android:contentDescription="Kapat" />
+    </LinearLayout>
+
+    <!-- Arama kutusu -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_search_field"
+        android:paddingStart="12dp"
+        android:paddingEnd="4dp"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/searchInput"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="Şarkı adı veya sanatçı…"
+            android:hintTextColor="@color/text_hint"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <ImageButton
+            android:id="@+id/searchBtn"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_circle_accent"
+            android:src="@drawable/ic_search"
+            android:tint="@color/on_accent"
+            android:contentDescription="Ara"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <!-- Yükleniyor -->
+    <ProgressBar
+        android:id="@+id/loadingBar"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:indeterminateTint="@color/accent"
+        android:visibility="gone" />
+
+    <!-- Durum mesajı -->
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="13sp"
+        android:textColor="@color/text_secondary"
+        android:visibility="gone" />
+
+    <!-- Sonuç listesi -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/resultList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:maxHeight="280dp"
+        android:nestedScrollingEnabled="true"
+        android:visibility="gone" />
+
+</LinearLayout>

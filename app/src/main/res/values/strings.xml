@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Şarkı Bulucu</string>
+    <string name="search_hint">Şarkı adı veya sanatçı…</string>
+    <string name="open_in_lastfm">Last.fm\'de Aç</string>
+    <string name="install_lastfm">Last.fm yüklü değil. Yüklemek için tıklayın →</string>
+    <string name="no_results">Şarkı bulunamadı</string>
+    <string name="error_generic">Bir hata oluştu</string>
+</resources>

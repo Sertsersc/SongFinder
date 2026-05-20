@@ -1,0 +1,19 @@
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# APK ve keystore
+*.apk
+*.aab
+*.keystore
+release.keystore
+
+# Secrets
+*.env
